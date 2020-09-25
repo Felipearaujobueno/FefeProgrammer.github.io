@@ -1,9 +1,37 @@
 @charset "UTF-8";
 
-body{
-    background-color: black;
+
+
+header{ height: 200px; }
+
+#menu ul{
+    padding:20px;
+    margin:0px;
+    
+    list-style:none;
+    float: right;
 }
 
-nav .menu{
+#menu ul li{
+    display: inline;
     list-style: none;
+}
+
+#menu ul li a{ padding: 20px; color: black; font-size: 30pt; }
+
+#menu ul li :hover a { background-color: rgb(157, 157, 243); }
+
+#sobre { float: left; color: white; width: 100%; height: 500px; background-image: url('../img/earch.gif'); font-size: 20pt; background-repeat: no-repeat; }
+
+#skils { display: inline; }
+
+main nav #projetos{
+    display: inline;
+}
+
+main nav .projeto{
+    width: 170px;
+    height: 200px;
+    background-color: thistle;
+    padding: 100px;
 }
