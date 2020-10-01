@@ -27,3 +27,7 @@ body{
 .formulario input .botao{
     background-color: skyblue;
 }
+
+@media (max-width: 300px){
+    .formulario{ width: 100px; height: 100px; }
+}
