@@ -1,13 +1,21 @@
 @charset "UTF-8";
 
+body{ margin: 0; background-color: white;  }
 
+header{ 
+    position: -webkit-sticky;
+    position: sticky;
+    height: 100px; 
+    background-color: black; 
+    color: white;
+    margin-top: 5px; 
+}
 
-header{ height: 200px; }
+#menu { color: white; }
 
 #menu ul{
     padding:20px;
     margin:0px;
-    
     list-style:none;
     float: right;
 }
@@ -17,21 +25,45 @@ header{ height: 200px; }
     list-style: none;
 }
 
-#menu ul li a{ padding: 20px; color: black; font-size: 30pt; }
+#menu ul li a{ padding: 20px; color:white; font-size: 30pt; text-decoration: none; }
 
-#menu ul li :hover a { background-color: rgb(157, 157, 243); }
+#menu ul li a:hover { background-color: rgb(157, 157, 243); }
 
-#sobre { float: left; color: white; width: 100%; height: 500px; background-image: url('../img/earch.gif'); font-size: 20pt; background-repeat: no-repeat; }
-
-#skils { display: inline; }
-
-main nav #projetos{
-    display: inline;
+.apresentacao{ 
+    align-items: center;
+    border: solid 1px black;
+    width: 500px;
+    height: 800px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 3px 2px gainsboro;
 }
 
-main nav .projeto{
-    width: 170px;
-    height: 200px;
-    background-color: thistle;
-    padding: 100px;
+.apresentacao img{ width: 100%; height: 50%; border-radius: 400px; padding-bottom: 30px; }
+
+.apresentacao h2{ text-align: center; padding-bottom: 50px; }
+
+.git{ text-decoration: none; color: white; font-weight: 700; font-size: 20px; }
+
+.destaque{ 
+    background-color: skyblue;
+    width: 100%; 
+    padding: 30px; 
+    border-radius: 20px; 
+    box-shadow: 4px 4px 2px gainsboro; 
+}
+
+.destaque:active{ box-shadow: none; }
+
+.destaque:hover{ box-shadow: 8px 8px 4px gainsboro; }
+
+#sobre { display: inline-block; border: solid 1px black; padding: 20px; margin-top: 40px; }
+
+.skil {
+    border: solid 1px black;
+    display: inline-block;
+    padding: 10px;
+    margin: 20px 20px;
+    box-shadow: 7px 7px 8px gainsboro; 
 }
