@@ -8,7 +8,6 @@ header{
     height: 100px; 
     background-color: black; 
     color: white;
-    margin-top: 5px; 
 }
 
 #menu { color: white; }
@@ -58,7 +57,7 @@ header{
 
 .destaque:hover{ box-shadow: 8px 8px 4px gainsboro; }
 
-#sobre { display: inline-block; border: solid 1px black; padding: 20px; margin-top: 40px; }
+#skils { display: inline-block; border: solid 1px black; padding: 20px; margin-top: 40px; }
 
 .skil {
     border: solid 1px black;
@@ -67,3 +66,19 @@ header{
     margin: 20px 20px;
     box-shadow: 7px 7px 8px gainsboro; 
 }
+
+#projetos{
+    border: solid 1px black;
+}
+
+#projetos h1{ text-align: center; }
+
+.projeto{
+    border: solid 1px black;
+    display: inline-block;
+    padding: 10px;
+    margin: 20px 20px;
+    box-shadow: 7px 7px 8px gainsboro;
+}
+
+.projeto a h4{ text-decoration: none; }
