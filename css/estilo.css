@@ -1,47 +1,18 @@
 @charset "UTF-8";
 
-body{ margin: 0; background-color: white;  }
-
-header{ 
-    position: -webkit-sticky;
-    position: sticky;
-    height: 100px; 
-    background-color: black; 
-    color: white;
-}
-
-#menu { color: white; }
-
-#menu ul{
-    padding:20px;
-    margin:0px;
-    list-style:none;
-    float: right;
-}
-
-#menu ul li{
-    display: inline;
-    list-style: none;
-}
-
-#menu ul li a{ padding: 20px; color:white; font-size: 30pt; text-decoration: none; }
-
-#menu ul li a:hover { background-color: rgb(157, 157, 243); }
+body{ margin: 0; background-color: white; padding: 0; }
 
 .apresentacao{ 
     align-items: center;
-    border: solid 1px black;
     width: 500px;
     height: 800px;
-    padding: 10px;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 3px 3px 2px gainsboro;
 }
 
-.apresentacao img{ width: 100%; height: 50%; border-radius: 400px; padding-bottom: 30px; }
+.apresentacao img{ margin-left: auto; margin-right: auto; }
 
-.apresentacao h2{ text-align: center; padding-bottom: 50px; }
+.apresentacao h1{ text-align: center; margin-bottom: 50px; }
 
 .git{ text-decoration: none; color: white; font-weight: 700; font-size: 20px; }
 
@@ -57,7 +28,7 @@ header{
 
 .destaque:hover{ box-shadow: 8px 8px 4px gainsboro; }
 
-#skils { display: inline-block; border: solid 1px black; padding: 20px; margin-top: 40px; }
+#skils { display: inline-block; border: solid 1px black; padding: 20px; margin-top: 40px;  }
 
 .skil {
     border: solid 1px black;
@@ -67,8 +38,13 @@ header{
     box-shadow: 7px 7px 8px gainsboro; 
 }
 
+#sobre h1{ text-align: center; }
+
 #projetos{
     border: solid 1px black;
+    padding: 20px;
+    
+    margin-top: 40px;
 }
 
 #projetos h1{ text-align: center; }

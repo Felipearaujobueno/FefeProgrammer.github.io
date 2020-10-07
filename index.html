@@ -3,12 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="css/estilo.css" /> 
     <title>Portifólio</title>
   </head>
   <body>
     <header>
-      <nav id="menu">
+      <!--<nav id="menu">
         <ul>
           <li><a href="">Home</a></li>
           <li><a href="">Sobre</a></li>
@@ -16,62 +19,108 @@
           <li><a href="">Projetos</a></li>
           <li><a href="">Contato</a></li>
         </ul>
+      </nav> -->
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <a class="navbar-brand" href="#">Portfólio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Skills<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projetos<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato<span class="sr-only"></span></a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
         <div class="apresentacao">
-            <img src="img/felipe.jpg" alt="" />
-            <h2>Felipe de Araujo Bueno</h2>
-            <a href="https://github.com/Fefeprogrammer" class="git destaque" target="_blank">View GitHub</a>
+            <img src="img/felipe.jpg" alt="" class="rounded-circle" />
+            <h1>Felipe de Araujo Bueno</h1>
+            <a href="https://github.com/Fefeprogrammer" class="btn btn-info" target="_blank">View GitHub</a>
         </div>
       <div id="sobre">
         <div id="skils">
           <h1>HABILIDADES</h1>  
-          <div class="skil">
+          <div class="rounded skil">
               <img src="img/html.png" alt="" />
               <h4>HTML 5</h4>
           </div>
-          <div class="skil">
+          <div class="rounded skil">
               <img src="img/CSS3.png" alt="" />
               <h4>CSS3</h4>
           </div>
-          <div class="skil">
+          <div class="rounded skil">
               <img src="img/javascript.png" alt="" />
               <h4>JavaScript</h4>
           </div>
-          <div class="skil">
+          <div class="rounded skil">
               <img src="img/php.png" alt="" />
               <h4>PHP</h4>
           </div>
-          <div class="skil">
+          <div class="rounded skil">
               <img src="img/cSharp.jpg" alt="" />
               <h4>C#</h4>
           </div>
-          <div class="skil">
+          <div class="rounded skil">
               <img src="img/unity.png" alt="" />
               <h4>Unity 2D/3D</h4>
           </div>
-          <div class="skil">
+          <div class="rounded skil">
               <img src="img/mySql.png" alt="" />
               <h4>MySQL</h4>
           </div>
-          <div class="skil">
+          <div class="rounded skil">
               <img src="img/sqlServer.jpg" alt="" />
               <h4>SQL Server</h4>
           </div>
         </div>
         <div id="projetos">
             <h1>PROJETOS</h1>
-            <div class="projeto">
-                <a href=""><img src="img/crypto.png" alt="">
+           <!-- <div class="projeto">
+                <a href="criptografia.html"><img src="img/crypto.png" alt="">
                 <h4>Criptografia base-64</h4></a>
             </div>
             <div class="projeto">
                 <a href="stalker.html"><img src="img/stalker-img.png" alt=""></a>
                 <h1>Stalker</h1>
+            </div> -->
+
+            <div class="card projeto" style="width: 18rem;">
+              <img src="img/crypto.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Criptografia base-64</h5>
+                <p class="card-text">Página simples que converte textos em código base-64</p>
+                <a href="criptografia.html" class="btn btn-primary">Ver Projeto</a>
+              </div>
+            </div>
+            <div class="card projeto" style="width: 18rem;">
+              <img src="img/extencao.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Criptografia base-64(Extenção)</h5>
+                <p class="card-text">Extensão para navegadores(testado no Google chrome e edge) que converte textos em base-64</p>
+                <a href="arquivos/extencao.zip" class="btn btn-success">Download</a>
+              </div>
             </div>
         </div>
     </main>
-    <footer></footer>
+    <footer id="myFooter" class="container">
+
+    </footer>
   </body>
 </html>
