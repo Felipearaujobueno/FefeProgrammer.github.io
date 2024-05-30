@@ -11,139 +11,185 @@
     <title>Portifólio</title>
   </head>
   <body>
-    <header>
-      <!--<nav id="menu">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Sobre</a></li>
-          <li><a href="#sobre">Skils</a></li>
-          <li><a href="">Projetos</a></li>
-          <li><a href="">Contato</a></li>
-        </ul>
-      </nav> -->
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
-        <!--<a class="navbar-brand" href="#">Portfólio</a> -->
+    <header class="header" style="background-color: white; z-index: 5000;">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#sobre">Sobre<span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills<span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projetos">Projetos<span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contato<span class="sr-only"></span></a>
-            </li>
-          </ul>
+          <div class="nav-item header-content">
+            <div class="header-logo-content">
+              <div class="header-logo-img">
+                <img src="img/felipe.jpg" alt="Felipe A. Bueno Logo" class="img-topo" /> 
+              </div>
+              <span class="header-logo-sub">Felipe A. Bueno</span>
+            </div>
+            <div>
+              <ul class="navbar-nav header-links">
+                <li class="nav-item">
+                  <a class="nav-link font-menu" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-menu" href="#sobre">Sobre<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-menu" href="#projetos">Projetos<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-menu" href="#">Contato<span class="sr-only"></span></a>
+                </li>
+              </ul>
+            </div>
         </div>
       </nav>
     </header>
     <main>
-        <div class="card mb-3 w-50 p-1" style="margin-left: auto; margin-right: auto;">
-            <img src="img/felipe.jpg" alt="" class="rounded-circle card-img-top" />
-            <h1 class="card-title">Felipe de Araujo Bueno</h1>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <a href="https://github.com/Fefeprogrammer" class="btn btn-info" target="_blank">View GitHub</a>
-        </div>
-      <div id="sobre">
-        <div id="skils">
-          <h1>HABILIDADES</h1>  
-          <div class="rounded skil">
-              <img src="img/html.png" alt="" />
-              <h4>HTML 5</h4>
-          </div>
-          <div class="rounded skil">
-              <img src="img/CSS3.png" alt="" />
-              <h4>CSS3</h4>
-          </div>
-          <div class="rounded skil">
-              <img src="img/javascript.png" alt="" />
-              <h4>JavaScript</h4>
-          </div>
-          <div class="rounded skil">
-              <img src="img/php.png" alt="" />
-              <h4>PHP</h4>
-          </div>
-          <div class="rounded skil">
-              <img src="img/cSharp.jpg" alt="" />
-              <h4>C#</h4>
-          </div>
-          <div class="rounded skil">
-              <img src="img/unity.png" alt="" />
-              <h4>Unity 2D/3D</h4>
-          </div>
-          <div class="rounded skil">
-              <img src="img/mySql.png" alt="" />
-              <h4>MySQL</h4>
-          </div>
-          <div class="rounded skil">
-              <img src="img/sqlServer.jpg" alt="" />
-              <h4>SQL Server</h4>
+      <div class="apresentacao">
+        <div class="row">
+          <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12">
+            <p class="line typing-animation">Olá, eu sou Felipe A. Bueno.</p>
           </div>
         </div>
-        <div id="projetos">
-            <h1>PROJETOS</h1>
-           <!-- <div class="projeto">
-                <a href="criptografia.html"><img src="img/crypto.png" alt="">
-                <h4>Criptografia base-64</h4></a>
-            </div>
-            <div class="projeto">
-                <a href="stalker.html"><img src="img/stalker-img.png" alt=""></a>
-                <h1>Stalker</h1>
-            </div> -->
-
-            <div class="card projeto" style="width: 18rem;">
-              <img src="img/crypto.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Criptografia base-64</h5>
-                <p class="card-text">Página simples que converte textos em código base-64</p>
-                <a href="criptografia.html" class="btn btn-primary">Ver Projeto</a>
-              </div>
-            </div>
-            <div class="card projeto" style="width: 18rem;">
-              <img src="img/extencao.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Criptografia base-64(Extenção)</h5>
-                <p class="card-text">Extensão para navegadores(testado no Google chrome e edge) que converte textos em base-64</p>
-                <a href="arquivos/extencao.zip" class="btn btn-success">Download</a>
-              </div>
-            </div>
-            <div class="card projeto" style="width: 18rem; height: 28rem; margin-top: 0px;">
-              <img src="img/game.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Coleta</h5>
-                <p class="card-text">Game em que o jogador tem que coletar itens</p>
-                <a href="arquivos/Debug.zip" class="btn btn-success">Download</a>
-              </div>
-            </div>
+        <div class="row">
+          <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 mt-3">
+            <p class="text-home">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et viverra ipsum. 
+              Vestibulum ut fringilla justo, quis accumsan erat.</p>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 home-btn">
+            <button class="button button--bg">Projetos</button>
+          </div>
+        </div>
+      </div>
+      <div id="sobre" class="mt-5">
+        <div class="container-fluid">
+          <div class="row">
+            <p class="title">Sobre</p>
+          </div>
+          <div class="row">
+            <p class="text-home">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et viverra ipsum. 
+              Vestibulum ut fringilla justo, quis accumsan erat.</p>
+          </div>
+        </div>
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6 col-xl-6">
+              <div class="container">
+                <div class="row mb-5">
+                  <p class="sub-title">Titulo</p>
+                </div>
+                <div class="row">
+                  <p class="text-home">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium tortor elit,
+                     vel pulvinar lectus vulputate sit amet. Cras ac euismod dolor. Praesent eros mauris,
+                    aliquet at lorem nec, posuere pulvinar odio. Vivamus tempor ex ut augue auctor,
+                    eu vulputate neque blandit. Aliquam lobortis ultrices suscipit.
+                    Mauris feugiat risus mattis sodales ornare. Morbi eu ligula a magna sollicitudin varius cursus
+                    in tortor.
+                  </p>
+                  <p class="text-home">Sed tortor enim, pulvinar ut erat varius, mollis auctor tellus. Nam maximus magna eu lorem pharetra
+                    placerat. Curabitur sed varius nunc. Nulla condimentum tempus gravida. Quisque eleifend mollis tellus
+                    sit amet laoreet. Vestibulum sit amet auctor sem. Suspendisse ultricies enim a nisi aliquet,
+                    nec sagittis ex ullamcorper. Vestibulum tempor sapien sem, vitae posuere lorem feugiat id.
+                    Proin sit amet pharetra erat. Etiam eu varius mi.
+                  </p>
+                  <p class="text-home">Nam accumsan hendrerit nibh, eget sollicitudin sem vulputate quis. Quisque blandit eu nisl ac
+                    laoreet. Vivamus nibh ligula, condimentum eu leo nec, suscipit consequat dolor.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum ante et ante dictum,
+                    vel maximus risus porta. Ut quis congue velit. Fusce sed porta elit. Nulla fringilla justo ipsum,
+                    et consequat elit malesuada id. Aliquam quis fermentum sapien. Vestibulum condimentum enim justo,
+                    et hendrerit nisl consequat vel. Sed pulvinar nibh felis, sed porttitor tellus mollis et.
+                    Praesent elementum, odio a semper rutrum, lectus erat finibus dolor, ut feugiat neque mi et
+                    arcu.
+                  </p>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 home-btn">
+                    <button class="button button--bg">Contato</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6 col-xl-6">
+              <div class="container">
+                <div class="row mb-5">
+                  <p class="sub-title">Habilidades</p>
+                </div>
+                <div class="row">
+                  <div class="skills">
+                    <div class="skill-item">HTML</div>
+                    <div class="skill-item">CSS</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">Bootstrap</div>
+                    <div class="skill-item">PHP</div>
+                    <div class="skill-item">MySQL</div>
+                    <div class="skill-item">C#</div>
+                    <div class="skill-item">ASP.NET</div>
+                    <div class="skill-item">ASP.NET MVC</div>
+                    <div class="skill-item">ASP.NET Core</div>
+                    <div class="skill-item">SQL Server</div>
+                    <div class="skill-item">Git</div>
+                    <div class="skill-item">SQLite</div>
+                    <div class="skill-item">CefSharp</div>
+                    <div class="skill-item">ReactJS</div>
+                    <div class="skill-item">Node.js</div>
+                    <div class="skill-item">Linux</div>
+                    <div class="skill-item">Inglês</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="projetos" class="mt-5">
+        <div class="row">
+          <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12">
+            <p class="title">PROJETOS</p>
+          </div>
+        </div>    
+        <div class="row">
+          <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="projects">
+              <div class="card projeto">
+                <img src="img/crypto.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-home">Criptografia base-64</h5>
+                  <p class="card-text text-home">Página simples que converte textos em código base-64</p>
+                  <a href="criptografia.html" class="btn btn-primary">Ver Projeto</a>
+                </div>
+              </div>
+              <div class="card projeto">
+                <img src="img/extencao.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-home">Criptografia base-64(Extenção)</h5>
+                  <p class="card-text text-home">Extensão para navegadores(testado no Google chrome e edge) que converte textos em base-64</p>
+                  <a href="arquivos/extencao.zip" class="btn btn-success">Download</a>
+                </div>
+              </div>
+              <div class="card projeto">
+                <img src="img/game.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-home">Coleta</h5>
+                  <p class="card-text text-home">Game em que o jogador tem que coletar itens</p>
+                  <a href="arquivos/Debug.zip" class="btn btn-success">Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer id="myFooter" class="container">
-        <ul>
-          <li><a href="">Sobre</a></li>
-          <li><a href="">Skills</a></li>
-          <li><a href="">Projetos</a></li>
-          <li><a href="">Contato</a></li>
-        </ul>
         <div class="footer-copyright">
-            <p>© 2020 Copyright - Felipe de Araujo Bueno</p>
+            <p>© 2024 Copyright - Felipe de Araujo Bueno</p>
         </div>
         <div class="footer-social">
             <div  class="fa">
               <a href="https://www.facebook.com/felipe.araujobueno/" target="_blank" class="fa-facebook">f</a>
             </div>
-        </div>
+          </div>
     </footer>
   </body>
 </html>

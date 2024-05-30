@@ -1,16 +1,20 @@
 @charset "UTF-8";
 
-body{ margin: 0; background-color: white; padding: 0; }
+body{
+    display: flex;
+    align-items: center;
+    margin: 0; 
+    background-color: white;
+    padding: 0; 
+}
 
 .apresentacao{ 
     align-items: center;
-    width: 150px;
-    height: 800px;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    margin-top: 350px;
 }
-
-.apresentacao img{ margin-left: auto; margin-right: auto; }
 
 .apresentacao h1{ text-align: center; margin-bottom: 50px; }
 
@@ -28,43 +32,185 @@ body{ margin: 0; background-color: white; padding: 0; }
 
 .destaque:hover{ box-shadow: 8px 8px 4px gainsboro; }
 
-#skils { display: inline-block; border: solid 1px black; padding: 20px; margin-top: 40px;  }
+.img-topo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
 
-.skil {
-    border: solid 1px black;
+.font-menu {
+    padding: 2.2rem 3rem;
     display: inline-block;
-    padding: 10px;
-    margin: 20px 20px;
-    box-shadow: 7px 7px 8px gainsboro; 
+    font-size: 1.6rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: color .3s;
 }
 
-#sobre h1{ text-align: center; }
-
-#projetos{
-    border: solid 1px black;
-    padding: 20px;
-    
-    margin-top: 40px;
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 5000;
+    background: #fff;
+    box-shadow: 0 10px 100px rgba(0,0,0,0.1);
 }
 
-#projetos h1{ text-align: center; }
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
 
-.projeto{
-    border: solid 1px black;
+.header-logo-content {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #333;
+}
+
+.header-logo-img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 1.5rem;
+}
+
+.header-logo-sub {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.header-links {
+    display: flex;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 350px;
+    /*background-image: url('../img/background-home.svg');*/
+}
+
+.home-btn {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.text-home {
+    color: #333;
+    font-size: 1.3rem;
+    text-align: center;
+    width: 100%;
+    line-height: 1.6;
+}
+
+.line {
+    border-right: 2px solid #333;
+    color: #333;
+    font-family: "Special Elite", monospace;
+    font-size: 3em;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.title {
+    color: #333;
+    font-family: "Special Elite", monospace;
+    font-size: 3em;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.sub-title {
+    color: #333;
+    font-family: "Special Elite", monospace;
+    font-size: 2em;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typing-animation {
+    animation: blinkCursor 500ms infinite normal,
+     typing 2s steps(40) 0s normal both;
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: #333;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 15.5em;
+    }
+}
+
+.button {
+    background: #7843E9;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     display: inline-block;
-    padding: 10px;
-    margin: 20px 20px;
-    box-shadow: 7px 7px 8px gainsboro;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+    transition: transform .3s;
+}
+    .button:hover {
+        transform: translateY(-3px);
+    }
+
+    .button--bg {
+        padding: 0.5rem 4rem;
+        font-size: 1.5rem;
+    }
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.projeto-3{
-    border: solid 1px black;
-    /*display: inline-block;*/
-    padding: 10px;
-    margin: 0px 20px;
-    box-shadow: 7px 7px 8px gainsboro;
-    padding-bottom: 200px;
-    height: 800px;
+.skill-item {
+    padding: 0.5rem 1rem;
+    margin-bottom: 1.1rem;
+    margin-left: 0.5rem;
+    font-size: 0.7rem;
+    background: rgba(153,153,153,0.2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #666;
 }
 
-.projeto a h4{ text-decoration: none; }
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projeto {
+    width: 18rem;
+    margin-left: 2.7rem;
+    margin-top: 3.5rem;
+}
