@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     display: flex;
     align-items: center;
@@ -89,6 +93,7 @@ body{
 
 .header-links {
     display: flex;
+    margin-left: 90%;
 }
 
 .main-container {
@@ -101,6 +106,15 @@ body{
 .home-btn {
     margin-top: 5rem;
     text-align: center;
+}
+
+.home-socials {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    padding: 0.5rem;
 }
 
 .text-home {
