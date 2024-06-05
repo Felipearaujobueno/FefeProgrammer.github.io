@@ -33,21 +33,46 @@ function preencherTextoHeader(language) {
 }
 
 function preencherTextoHome(language) {
-
+    if(language == 'pt-PT') {
+        document.querySelector('#txtApresentacao').innerHTML = 'Olá, eu sou Felipe A. Bueno.'
+        //document.querySelector('#txtSubApresentacao').innerHTML = ''
+        document.querySelector('#btnProjetosTitle').innerHTML = 'Projetos'
+        return
+    }
+    document.querySelector('#txtApresentacao').innerHTML = "Hey, I'm Felipe A. Bueno."
+    //document.querySelector('#txtSubApresentacao').innerHTML = ''
+    document.querySelector('#btnProjetosTitle').innerHTML = 'Projects'
 }
 
 function preencherTextoSobre(language) {
+    if(language == 'pt-PT') {
+        document.querySelector('#tituloSobre').innerHTML = 'Sobre'
+        document.querySelector('#subTituloSobre').innerHTML = 'Sobre mim'
+        document.querySelector('#btnTxtContato').innerHTML = 'Contato'
+        document.querySelector('#subTituloHabilidades').innerHTML = 'Habilidades'
+        return
+    }
 
+    document.querySelector('#tituloSobre').innerHTML = 'About'
+    document.querySelector('#subTituloSobre').innerHTML = 'About me'
+    document.querySelector('#btnTxtContato').innerHTML = 'Contact'
+    document.querySelector('#subTituloHabilidades').innerHTML = 'Skills'
 }
 
 function preencherTextoProjetos(language) {
+    if(language == 'pt-PT') {
 
+    }
 }
 
 function preencherTextoContato(language) {
+    if(language == 'pt-PT') {
 
+    }
 }
 
 function preencherTextoFooter(language) {
+    if(language == 'pt-PT') {
 
+    }
 }

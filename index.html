@@ -37,7 +37,7 @@
                 <li class="nav-item">
                   <a id="header_projetos" class="nav-link font-menu" href="#projetos"></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" style="display: none;">
                   <a id="header_contato" class="nav-link font-menu" href="#"></a>
                 </li>
               </ul>
@@ -46,7 +46,7 @@
       </nav>
     </header>
     <main>
-      <div class="home-socials">
+      <!-- <div class="home-socials">
         <div class="">
           <a href="https://github.com/Felipearaujobueno" class="" rel="" target="_blank">
             <i class="fa-brands fa-2x fa-github"></i>
@@ -57,33 +57,33 @@
             <i class="fa-brands fa-2x fa-linkedin"></i>
           </a>
         </div>
-      </div>
+      </div> -->
       <div class="apresentacao">
         <div class="row">
           <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12">
-            <p class="line typing-animation">Olá, eu sou Felipe A. Bueno.</p>
+            <p id="txtApresentacao" class="line typing-animation"></p>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 mt-3">
-            <p class="text-home">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et viverra ipsum. 
-              Vestibulum ut fringilla justo, quis accumsan erat.</p>
+            <p id="txtSubApresentacao" class="text-home">Desenvolvedor Web orientado a resultados,
+               construindo e gerenciando sites e aplicativos da Web que levam ao sucesso do produto geral.</p>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 home-btn">
-            <button class="button button--bg">Projetos</button>
+            <button id="btnProjetosTitle" class="button button--bg" href="#projetos"></button>
           </div>
         </div>
       </div>
       <div id="sobre" class="mt-5">
         <div class="container-fluid">
           <div class="row">
-            <p class="title">Sobre</p>
+            <p id="tituloSobre" class="title"></p>
           </div>
           <div class="row">
-            <p class="text-home">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et viverra ipsum. 
-              Vestibulum ut fringilla justo, quis accumsan erat.</p>
+            <p class="text-home">Aqui você vai encontrar mais informações sobre mim, o que eu faço,
+               e sobre as minhas habilidades em termos técnicos.</p>
           </div>
         </div>
         <div class="container mt-5">
@@ -91,7 +91,7 @@
             <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6 col-xl-6">
               <div class="container">
                 <div class="row mb-5 mt-5">
-                  <p class="sub-title">Titulo</p>
+                  <p id="subTituloSobre" class="sub-title"></p>
                 </div>
                 <div class="row">
                   <p class="text-home">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium tortor elit,
@@ -117,17 +117,17 @@
                     arcu.
                   </p>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                   <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 home-btn">
-                    <button class="button button--bg">Contato</button>
+                    <button id="btnTxtContato" class="button button--bg"></button>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
             <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6 col-xl-6">
               <div class="container">
                 <div class="row mb-5 mt-5">
-                  <p class="sub-title">Habilidades</p>
+                  <p id="subTituloHabilidades" class="sub-title"></p>
                 </div>
                 <div class="row">
                   <div class="skills">
@@ -168,15 +168,15 @@
               <div class="card projeto">
                 <img src="img/crypto.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title text-home">Criptografia base-64</h5>
+                  <h5 class="card-title text-home">Base-64 Convert</h5>
                   <p class="card-text text-home">Página simples que converte textos em código base-64</p>
-                  <a href="criptografia.html" class="btn btn-primary">Ver Projeto</a>
+                  <a href="base-64_convert.html" class="btn btn-primary">Ver Projeto</a>
                 </div>
               </div>
               <div class="card projeto">
                 <img src="img/extencao.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title text-home">Criptografia base-64(Extenção)</h5>
+                  <h5 class="card-title text-home">Base-64 Convert(Extenção)</h5>
                   <p class="card-text text-home">Extensão para navegadores(testado no Google chrome e edge) que converte textos em base-64</p>
                   <a href="arquivos/extencao.zip" class="btn btn-success">Download</a>
                 </div>
